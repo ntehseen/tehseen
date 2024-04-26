@@ -290,7 +290,7 @@
                         <div class="text-pr">
                             <h3>Web Development</h3>
                             <p>Gladiators Gym Website</p>
-                            <a href="https://ntehseen.github.io/The-Gladiators-Gym" target="_blank">Live Link</a>
+                            <a href="https://github.com/ntehseen/The-Gladiators-Gym" target="_blank">Live Link</a>
                         </div>
                     </div>
                 </div>
@@ -373,14 +373,14 @@
                 </div>
                 <div class="contact-column">
                     <div class="contact-text">Message me</div>
-                    <form action="#" class="contact-form">
+                    <form action="#" class="contact-form" onsubmit="sendEmail(event)">
                         <div class="contact-fields">
-                            <input type="text" placeholder="Name" class="contact-field" required />
-                            <input type="email" placeholder="Email" class="contact-field" name="email" required />
+                            <input type="text" placeholder="Name" class="contact-field" name="from_name" required />
+                            <input type="email" placeholder="Email" class="contact-field" name="reply_to" required />
                         </div>
-                        <input type="text" placeholder="Subject" class="contact-field" required />
-                        <textarea cols="30" rows="10" placeholder="Describe Project..."
-                            class="contact-field contact-textarea" required></textarea>
+                        <input type="text" placeholder="Subject" class="contact-field" name="subject" required />
+                        <textarea cols="30" rows="10" placeholder="Your message..."
+                            class="contact-field contact-textarea" name="message" required></textarea>
                         <button type="submit" class="contact-button">
                             Send Message <i class="fas fa-paper-plane"></i>
                         </button>
@@ -389,6 +389,7 @@
             </div>
         </div>
     </section>
+
     <!-- Contact section end -->
 
     <!--Footer Section Start-->
@@ -402,14 +403,27 @@
         </span>
     </footer>
     <!-- footer section end -->
+
+
+
     <!-- External Javascript File start-->
     <script src="js/script.js" async></script>
     <script src="js/cursor.js"></script>
+    <script src="js/email.js" async></script>
     <!-- External Javascript File end-->
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "3npATMh3fKvultH_l",
+  });
+})();
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
