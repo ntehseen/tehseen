@@ -87,45 +87,45 @@
         });
       });
 
-      document.querySelector("#contact").addEventListener("mouseleave", function () {
-        gsap.to("#cursor", {
-          transform: 'translate(-50%, -50%) scale(0)',
-        });
-      });
+  //     document.querySelector("#contact").addEventListener("mouseleave", function () {
+  //       gsap.to("#cursor", {
+  //         transform: 'translate(-50%, -50%) scale(0)',
+  //       });
+  //     });
     
-      document.querySelectorAll("#contact").forEach(function (element) {
-        element.addEventListener("mouseenter", function () {
-          gsap.to("#cursor", {
-            transform: "translate(-50%, -50%) scale(1)",
-          });
-        });
+  //     document.querySelectorAll("#contact").forEach(function (element) {
+  //       element.addEventListener("mouseenter", function () {
+  //         gsap.to("#cursor", {
+  //           transform: "translate(-50%, -50%) scale(1)",
+  //         });
+  //       });
     
-        element.addEventListener("mouseleave", function () {
-          gsap.to("#cursor", {
-            transform: "translate(-50%, -50%) scale(0)",
-          });
-        });
-      });
+  //       element.addEventListener("mouseleave", function () {
+  //         gsap.to("#cursor", {
+  //           transform: "translate(-50%, -50%) scale(0)",
+  //         });
+  //       });
+  //     });
   
-    document.querySelector("#fullScreenNav").addEventListener("mouseleave", function () {
-      gsap.to("#cursor", {
-        transform: 'translate(-50%, -50%) scale(0)',
-      });
-    });
+  //   document.querySelector("#fullScreenNav").addEventListener("mouseleave", function () {
+  //     gsap.to("#cursor", {
+  //       transform: 'translate(-50%, -50%) scale(0)',
+  //     });
+  //   });
   
-    document.querySelectorAll("#fullScreenNav").forEach(function (element) {
-      element.addEventListener("mouseenter", function () {
-        gsap.to("#cursor", {
-          transform: "translate(-50%, -50%) scale(1)",
-        });
-      });
+  //   document.querySelectorAll("#fullScreenNav").forEach(function (element) {
+  //     element.addEventListener("mouseenter", function () {
+  //       gsap.to("#cursor", {
+  //         transform: "translate(-50%, -50%) scale(1)",
+  //       });
+  //     });
   
-      element.addEventListener("mouseleave", function () {
-        gsap.to("#cursor", {
-          transform: "translate(-50%, -50%) scale(0)",
-        });
-      });
-    });
-  }
+  //     element.addEventListener("mouseleave", function () {
+  //       gsap.to("#cursor", {
+  //         transform: "translate(-50%, -50%) scale(0)",
+  //       });
+  //     });
+  //   });
+  // }
   
   cursorAnimation();
