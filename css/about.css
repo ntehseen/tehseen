@@ -1,0 +1,140 @@
+/* About Section */
+.about {
+    max-height: none; /* Remove max-height for responsiveness */
+}
+
+.about .title::before,
+.about .title::after {
+    display: none; /* Hide unnecessary elements for responsiveness */
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* height: 80vh; */ /* Remove fixed height for responsiveness */
+    min-height: 400px;
+}
+
+.about .about-content .left {
+    width: 100%;
+    max-width: none; /* Remove max-width for responsiveness */
+    margin-right: 0; /* Adjust margin for responsiveness */
+    margin-bottom: 20px; /* Adjust margin for responsiveness */
+}
+
+.about .about-content .right {
+    width: 100%;
+    max-width: none; /* Remove max-width for responsiveness */
+    margin-top: 20px; /* Adjust margin for responsiveness */
+}
+
+.about .about-content .right .text {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for responsiveness */
+    margin-right: 0; /* Adjust margin for responsiveness */
+}
+
+.about .about-content .right p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    margin-right: 0; /* Adjust margin for responsiveness */
+    color: #fff; /* Add color property */
+    line-height: 1.5; /* Add line-height property */
+    font-family: "Fira Code", monospace; /* Add font-family property */
+}
+
+
+.about .about-content a {
+    margin-top: 20px; /* Adjust margin for responsiveness */
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px 15px;
+}
+
+
+
+
+.about .title {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-family: "Fira Code", monospace;
+    background: linear-gradient(135deg, #42d392, #647eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.about .title::before {
+    /* content: ""; */
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.about .title::after {
+    /* content: ""; */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    padding: 5px;
+    font-size: 30px;
+    color: #1eace9;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar .logo a {
+        font-size: 20px;
+    }
+
+    .navbar .menu li a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .scroll-up-btn {
+        right: 10px;
+        bottom: 10px;
+        font-size: 24px;
+    }
+
+    .home .home-content #text-1 {
+        font-size: 14px;
+    }
+
+    .home .home-content #text-2 {
+        font-size: 28px;
+    }
+
+    .home .home-content #text-3 {
+        font-size: 28px;
+    }
+
+    .home .home-content a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .about .about-content .left,
+    .about .about-content .right {
+        width: 100%;
+        max-width: none;
+    }
+
+    .about .about-content .right {
+        margin-top: 20px;
+
+    }
+}
+

@@ -1,0 +1,24 @@
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #171717;
+    color: #ffffff;
+    font-family: "Fira Code", monospace;
+}
+
+.footer span {
+    font-size: 14px;
+}
+
+.footer a {
+    font-family: "Fira Code", monospace;
+    background: linear-gradient(135deg, #42d392, #647eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

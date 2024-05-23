@@ -1,0 +1,236 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+
+#cursor {
+    height: 180px;
+    width: 180px;
+    background-color: #0da1f082;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+
+}
+
+
+/* Body Styling */
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-image: linear-gradient(to right top, #000000, #000000, #000000, #000000, #000000);
+    color: #fff;
+    text-transform: none;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex; /* Add this line */
+    position: fixed;
+    top: 0; /* Adjust this as needed */
+    width: 100%;
+    padding: auto;
+    z-index: 999;
+    transition: all 0.3s ease;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.navbar.sticky {
+    padding: 10px 0;
+    background-color: #000;
+    border-bottom: 1px solid #0da1f0;
+    top: 0; /* Adjust this as needed */
+}
+
+
+.max-width {
+    max-width: 1350px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    transition: color 0.3s ease;
+
+}
+.navbar.logo a:hover {
+
+    background: transparent;
+    box-shadow: 0 0px 22px 2px rgba(8, 205, 198, 0.649);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 4px;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+    margin-left: 15px;
+    color: #fff;
+    transition: color 0.3s ease;
+    text-decoration: wavy !important;
+}
+
+.navbar .logo img {
+    height: 40px;
+    /* Adjusted height for smaller screens */
+}
+
+.navbar .menu li a:hover {
+    color: #1eace9;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #1eace9;
+    text-decoration: underline !important;
+}
+
+/* Menu Button Styling */
+.menu-btn {
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Scroll button styling */
+.scroll-up-btn {
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    right: 15px;
+    bottom: 15px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 20px;
+}
+
+/* Home Section Styling */
+.home {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    background: transparent;
+    height: 80vh;
+    align-items: center;
+    min-height: 400px;
+}
+
+.home .max-width {
+    margin: auto;
+}
+
+.home-content {
+    text-align: center;
+    color: #fff;
+}
+
+.home .home-content #text-1,
+.home .home-content #text-2 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Fira Code", monospace;
+    background: linear-gradient(135deg, #42d392, #647eff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.home .home-content #text-2 {
+    font-size: 96px;
+    font-weight: 900 bolder;
+    margin-left: -3px;
+    font-family: "Fira Code", sans-serif;
+    
+}
+
+.home .home-content #text-3 {
+    font-size: 32px;
+    margin: 5px 0;
+    font-family: "Fira Code", sans-serif;
+}
+
+.home .home-content #text-3 span {
+    font-weight: 500;
+    color: #1eace9;
+}
+
+.home .home-content a {
+    display: inline-block;
+    /* background: transparent; */
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 0.1px solid #1eace9;
+    transition: all 0.3s ease;
+
+
+
+}
+
+.home .home-content a:hover {
+    color: #1eace9;
+
+    background: transparent;
+    box-shadow: 0 0px 22px 2px rgba(8, 205, 198, 0.649);
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 4px;
+}
+
+/* CSS for typing bar animation */
+.typed-cursor {
+    color: #3c9d9c !important;
+    /* Change the color of the typing bar */
+    font-size: 26px;
+    /* Adjusted font size */
+    line-height: 1;
+    /* Adjust the line height if needed */
+    top: 10px !important;
+    /* Adjusted vertical position */
+    border-left: none;
+    /* Change the cursor style */
+    padding-left: 10px;
+    /* Add space between the typed text and the cursor */
+    font-family: "Fira Code";
+}
+

@@ -1,0 +1,158 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr: green;
+}
+
+/* body {
+    font-family: 'Fira Code', monospace;
+} */
+
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: transparent;
+    box-sizing: border-box;
+    font-family: 'Fira Code', sans-serif;
+}
+
+.background {
+    padding: 60px 0;
+}
+
+/* .about.title h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+} */
+
+.carousel-item {
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.card .btn {
+    font-family: 'Fira Code', monospace; 
+    font-size: 12px;
+    background: linear-gradient(135deg, #a5d342, #ffe564eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* .card .btn btn-secondary {
+    height: 40px;
+    font-family: 'Fira Code', monospace;
+    font-size: 15px;
+    background: linear-gradient(135deg, #acd342, #ff648beb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+} */
+
+/* .card .card-text {
+    color: #fff;
+} */
+
+/* Ensure buttons are displayed inline */
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card .btn-group {
+    display: flex;
+    gap: 14px; /* Adjust the space between buttons */
+    margin-top: 10px;
+}
+
+/* Use a class for different box shadows dynamically */
+/* .card {
+    margin: 10px;
+    width: 300px;
+    height: 450px; 
+    background: rgba(36, 36, 36, 0.454);
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+    box-shadow: 0 0px 10px 4px var(--card-shadow-color, rgba(8, 205, 198, 0.264)); 
+    transform: none !important; 
+} */
+
+.carousel-item .card {
+    margin: 40px;
+    width: 300px;
+    height: 500px; /* Adjust height if needed */
+    background: rgba(36, 36, 36, 0.454);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    /* box-shadow: 0 0px 10px 4px rgba(8, 205, 198, 0.264); */
+    box-shadow: 0 0 10px 3px var(--card-shadow-color, rgba(8, 205, 198, 0.12)); /* Default shadow color */
+    transform: none !important; /* Ensure no transformation is applied */
+}
+
+
+/* <img src="${project.image}" class="card-img-top" alt="${project.title}">
+<div class="card-body">
+    <h5 class="card-title">${project.title}</h5>
+    <p class="card-text">${project.description}</p>
+    <p class="card-text"><strong>Tech Stacks:</strong> ${project.techStacks.join(', ')}</p>
+    <div class="btn-group">
+        <a href="${project.sourceCodeLink}" class="btn btn-primary" target="_blank">Source Code</a>
+        <a href="${project.liveLink}" class="btn btn-secondary" target="_blank">Live Link</a>
+    </div>
+</div> */
+
+.card-title {
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    color: rgb(159, 189, 28);
+    z-index: -1;
+}
+
+.card .card-text {
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(135deg, #d34242de, #ffc964);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 14px;
+    text-align: center;
+}
+
+.card .card-text-d {
+   font-family: 'Fira Code', monospace; 
+    background: linear-gradient(135deg, #03c7f8, #0ca1f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.card .tech-stacks {
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(135deg, #42d3d3, #64ceff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
