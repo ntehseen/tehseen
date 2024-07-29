@@ -12,24 +12,24 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- <link rel="stylesheet" href="bg.css"> -->
 
     <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
- 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- <script  src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" /> -->
 
     <script defer src="https://kit.fontawesome.com/c943c24796.js" crossorigin="anonymous"></script>
 
     <!-- <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/"> -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -120,7 +120,7 @@
             </div>
 
             <div class="max-width">
-                <h2 class="about title" style="font-size: 30px;">ABOUT ME</h2>
+                <h2 class="about title" style="font-size: 30px;">About me</h2>
                 <div class="about-content">
                     <div class="column left">
                         <div class="wrapper">
@@ -248,10 +248,17 @@
     </div>
 
     <!-- Skills section end -->
+    <!--Projects Section Starts-->
+    <!-- <section id="projects_caraousel">
+        <h2>Projects</h2>
+  
+    </section> -->
 
-    <!-- Projects Section Start-->
-    <!-- Project Start -->
-    <section id="projects">
+    <!--Project Section End-->
+
+    <!-- Services Section Start-->
+
+    <section id="featured_projects">
         <div class="background">
             <div class="lines">
                 <div class="line"></div>
@@ -261,27 +268,88 @@
                 <div class="line"></div>
             </div>
             <div class="about title">
-                <h2>FEATURED PROJECTS</h2>
+                <h2>Featured Projects</h2>
             </div>
-    
-            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" id="carouselContent">
-                    <!-- Cards will be inserted here by JavaScript -->
+            <div class="container-fluid">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card" style="width: 20%; align-items: center;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                              
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
+
+            <!-- <div class="container-pr">
+                <div class="box-pr" style="--clr:#89ec5b;">
+                    <div class="content-pr">
+                        <div class="icon"><ion-icon name="brush"></ion-icon></div>
+                        <div class="text-pr">
+                            <h3>Data Science</h3>
+                            <p>Motor Vehicle Collisions in New York City Analysis Dashboard</p>
+                            <a href="https://github.com/ntehseen/Motor-Vehicle-Collisions-in-New-York-City-Analysis-Dashboard"
+                                target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pr" style="--clr:#f63d04;">
+                    <div class="content-pr">
+                        <div class="icon"><ion-icon name="code-slash"></ion-icon></div>
+                        <div class="text-pr">
+                            <h3>Machine Learning</h3>
+                            <p>Data Balancing : Fraud Detection using Generative Adversarial Networks (GANs)</p>
+                            <a href="https://github.com/ntehseen/Data-Balancing-with-Gen-AI-Credit-Card-Fraud-Detection"
+                                target="_blank">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-pr" style="--clr:#5b98eb;">
+                    <div class="content-pr">
+                        <div class="icon"><ion-icon name="search"></ion-icon></div>
+                        <div class="text-pr">
+                            <h3>Web Development</h3>
+                            <p>Gladiators Gym Website</p>
+                            <a href="https://github.com/ntehseen/The-Gladiators-Gym" target="_blank">Live Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
     </section>
 
-    <!-- Project End -->
-    <!-- Projects Section End-->
+
+    <!-- Services Section End-->
 
     <!-- Contact section start -->
     <section class="contact-container" id="contact">
@@ -393,20 +461,18 @@
     <script src="js/script.js" async></script>
     <script src="js/cursor.js"></script>
     <script src="js/email.js" async></script>
-    <script src="js/projects.js"></script>
     <!-- External Javascript File end-->
 
 
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-  emailjs.init({
-    publicKey: "3npATMh3fKvultH_l",
-  });
-})();
-</script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "3npATMh3fKvultH_l",
+            });
+        })();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
@@ -423,7 +489,9 @@
     <!-- <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script> -->
     <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 

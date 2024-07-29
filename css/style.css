@@ -56,6 +56,7 @@ body {
     max-width: 1350px;
     padding: 0 20px;
     margin: auto;
+    justify-content: space-between;
 }
 
 .navbar .max-width {
