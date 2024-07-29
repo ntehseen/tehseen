@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = [
 
         {
-            image: 'assets/florencia-florist.png',
+            image: 'florencia-florist.png',
             title: 'Web Development',
             description: 'Florencia Florist',
             techStacks: ['Html', 'CSS', 'GSAP','LocoMotive-Scroll'],
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             boxShadowColor: 'rgb(208, 174, 61)' // Example of a different color
         },
         {
-            image: 'assets/iamnacho.png',
+            image: 'iamnacho.png',
             title: 'Web Development',
             description: 'I Am Nacho Mama',
             techStacks: ['HTML', 'CSS', 'JavaScript, Bootstrap'],
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
         {
-            image: 'assets/verticle-slider.png',
+            image: 'verticle-slider.png',
             title: 'JavaScript',
             description: 'Vertical Slider',
             techStacks: ['Javascript', 'CSS','Html'],
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             boxShadowColor: 'rgba(90,139,158)' // Example of a different color
         },
         {
-            image: 'assets/Layman.png',
+            image: 'Layman.png',
             title: 'JavaScript',
             description: 'Layman Hall Theatre',
             techStacks: ['Javascript', 'CSS','Html'],
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             boxShadowColor: 'rgba(255, 80, 0, 0.264)' // Example of a different color
         },
         {
-            image: 'assets/calc-js.png',
+            image: 'calc-js.png',
             title: 'JavaScript',
             description: 'Simple JavaScript Calculator',
             techStacks: ['JavaScript'],
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
             boxShadowColor: 'rgba(100, 100,190)' // Example of a different color
         },
         {
-            image: 'assets/blurry.jpg',
+            image: 'blurry.jpg',
             title: 'Javascript',
             description: 'Blurry Loader',
             techStacks: ['Html', 'CSS', 'JavaScript'],
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         // Add more projects as needed
         {
-            image: '../assets/motor-veh.png',
+            image: 'motor-veh.png',
             title: 'Data Science/Analytics',
             description: 'Motor Vehicle Collisions in New York City Analysis Dashboard',
             techStacks: ['Python', 'Pandas', 'Matplotlib'],
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             boxShadowColor: 'rgba(52, 51, 100)' // Add desired box shadow color
         },
         {
-            image: 'assets/cred_fraud.jpg',
+            image: 'cred_fraud.jpg',
             title: 'Generative AI',
             description: 'Data Balancing : Fraud Detection using Generative Adversarial Networks (GANs)',
             techStacks: ['Python', 'TensorFlow', 'GANs'],
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
             boxShadowColor: 'rgba(138, 223, 224)' // Example of a different color
         },
         {
-            image: 'assets/pre-sal-rev.png',
+            image: 'pre-sal-rev.png',
             title: 'Machine Learning',
             description: 'Predict Sales Revenue with scikit-learn',
             techStacks: ['Pandas', 'Numpy', 'Sk-learn'],
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
             boxShadowColor: 'rgba(195, 175, 250)' // Example of a different color
         },
         {
-            image: 'assets/Emotion-AI-Detection.png',
+            image: 'Emotion-AI-Detection.png',
             title: 'Deep Learning/ Computer Vision',
             description: 'Facial Expression Classification Using Residual Neural Nets',
             techStacks: ['Pandas', 'Tensorflow', 'Keras', 'Neural Network','CV2'],
