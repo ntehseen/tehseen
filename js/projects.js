@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         // Add more projects as needed
         {
-            image: 'assets/motor-veh.png',
+            image: '../assets/motor-veh.png',
             title: 'Data Science/Analytics',
             description: 'Motor Vehicle Collisions in New York City Analysis Dashboard',
             techStacks: ['Python', 'Pandas', 'Matplotlib'],
